@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HolidayAssistant</name>
+    </assembly>
+    <members>
+        <member name="T:HolidayAssistant.Flight">
+            <summary>
+            Details of a return flight.
+            </summary>
+        </member>
+        <member name="T:HolidayAssistant.Helper">
+            <summary>
+            Helper class containing methods and enums for Main program.
+            </summary>
+        </member>
+        <member name="M:HolidayAssistant.Helper.StartDriverForBrowser(HolidayAssistant.Helper.Browser)">
+            <summary>
+            Starts and configures a driver for the specified browser.
+            </summary>
+            <param name="browser">Broowser to perform test on.</param>
+            <returns>Configured driver.</returns>
+        </member>
+        <member name="M:HolidayAssistant.Helper.WaitForWindow(System.Int32,OpenQA.Selenium.IWebDriver,System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            Method to switch tabs.
+            </summary>
+            <param name="timeout">Allowable loading time in ms.</param>
+            <param name="driver">Web driver.</param>
+            <param name="vars">Dictionary.</param>
+            <returns>Tab name.</returns>
+        </member>
+        <member name="T:HolidayAssistant.Helper.Browser">
+            <summary>
+            Browser names.
+            </summary>
+        </member>
+        <member name="F:HolidayAssistant.Helper.Browser.Chrome">
+            <summary>
+            Google Chrome browser.
+            </summary>
+        </member>
+        <member name="F:HolidayAssistant.Helper.Browser.Firefox">
+            <summary>
+            Mozilla Firefox browser.
+            </summary>
+        </member>
+        <member name="F:HolidayAssistant.Helper.Browser.Edge">
+            <summary>
+            Microsoft Edge browser.
+            </summary>
+        </member>
+        <member name="M:HolidayAssistant.Helper.GetHotel(System.String,System.Int32,OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Gets the details of a hotel stay from Booking.com.
+            </summary>
+            <param name="description">Description of the stay.</param>
+            <param name="nthElement">Row to get from the search results.</param>
+            <param name="driver">Selenium WebDriver.</param>
+            <returns>Hotel object.</returns>
+        </member>
+        <member name="T:HolidayAssistant.Hotel">
+            <summary>
+            Details of a hotel stay.
+            </summary>
+        </member>
+        <member name="T:HolidayAssistant.HotelSearch">
+            <summary>
+            Details of a hotel search.
+            </summary>
+        </member>
+    </members>
+</doc>
