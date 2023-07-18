@@ -50,13 +50,21 @@
             Microsoft Edge browser.
             </summary>
         </member>
-        <member name="M:HolidayAssistant.Helper.GetHotel(System.String,System.Int32,OpenQA.Selenium.IWebDriver)">
+        <member name="M:HolidayAssistant.Helper.ClearTextbox(OpenQA.Selenium.IWebElement,OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Clears a textbox ona a page using Selenium actions.
+            </summary>
+            <param name="textbox">Textbox element.</param>
+            <param name="driver">Selenium WebDriver.</param>
+        </member>
+        <member name="M:HolidayAssistant.Helper.GetHotel(System.String,System.Int32,OpenQA.Selenium.IWebDriver,OpenQA.Selenium.IJavaScriptExecutor)">
             <summary>
             Gets the details of a hotel stay from Booking.com.
             </summary>
             <param name="description">Description of the stay.</param>
             <param name="nthElement">Row to get from the search results.</param>
             <param name="driver">Selenium WebDriver.</param>
+            <param name="js">JavaScript Executor.</param>
             <returns>Hotel object.</returns>
         </member>
         <member name="T:HolidayAssistant.Hotel">
